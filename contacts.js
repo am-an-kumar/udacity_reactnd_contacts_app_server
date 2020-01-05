@@ -43,6 +43,7 @@ const add = (token, contact) => {
       .substr(-8);
   }
 
+  // using default image(no_image.png) as avatarURL if no image was uploaded for a contact
   if (!contact.avatarURL) {
     contact.avatarURL = config.origin + "/no_image.png";
   }
